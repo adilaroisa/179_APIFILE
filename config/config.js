@@ -1,33 +1,31 @@
-config.js
-
 require('dotenv').config();
 
-  const development = {
+
+const development = {
     "username": process.env.DB_USER,
     "password": process.env.DB_PASSWORD,
-    "database": process.env.DB_NAME,
+    "database": process.env.DB_DATABASE,
     "host": process.env.DB_HOST,
     "port": process.env.DB_PORT,
     "dialect": process.env.DB_DIALECT
-  }
+}
 
-  const test = {
+const test = {
     "username": process.env.DB_USER,
     "password": process.env.DB_PASSWORD,
-    "database": process.env.DB_NAME,
+    "database": process.env.DB_DATABASE,
     "host": process.env.DB_HOST,
     "port": process.env.DB_PORT,
     "dialect": process.env.DB_DIALECT
-  }
+}
 
-  const production = {
+const production = {
     "username": process.env.DB_USER,
     "password": process.env.DB_PASSWORD,
-    "database": process.env.DB_NAME,
+    "database": process.env.DB_DATABASE,
     "host": process.env.DB_HOST,
+    "port": process.env.DB_PORT,
     "dialect": process.env.DB_DIALECT
-  }
+}
 
 module.exports = {development, test, production}
-
-
